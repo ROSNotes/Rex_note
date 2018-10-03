@@ -18,6 +18,7 @@ cv2.destoryAllWindows()
 
 * 视频
 * eg（旋转90度）：
+```
 import numpy as np
 import cv2
 
@@ -35,7 +36,7 @@ while(True):
 
 cap.release()
 cv2.destroyAllWindows()
-
+```
 * 图形
 * eg: 
 绘制直线
@@ -79,6 +80,7 @@ def talker()
            pass
 ```
 * eg（让小车运动）：
+```
 import rospy 
 from geometry_msgs.msg import Twist  
 
@@ -94,7 +96,7 @@ while not rospy.is_shutdown():
   pub.publish(xue_cmd)
 
   xuegai_rate.sleep()
-
+```
 
 
 
@@ -121,7 +123,7 @@ while not rospy.is_shutdown():
        listener()
   ```
 * eg:
-
+```
 import rospy
 from std_msgs.msg import String
 from geometry_msgs.msg import Twist
@@ -145,4 +147,4 @@ def listener():
 if __name__ == '__main__':
        listener()
 
-
+```
